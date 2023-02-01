@@ -92,9 +92,15 @@ a { text-decoration: none; color: inherit;}
 }
 .section {
     height: 100vh;
+    padding: 0 60px;
     border: 1px solid;
     box-sizing: border-box;
     position: relative;
+}
+.content_wrap {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .subtitle {
     font-size: 16px;
@@ -106,24 +112,17 @@ a { text-decoration: none; color: inherit;}
 }
 
 /* 홈  */
-#home {
-    padding: 110px 60px;
-}
 .slide_container {
     width: 100%;
     height: 130px;
-    position: absolute;
-    left: 0;
+    box-sizing: border-box;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
-    padding: 0 50px;
-    box-sizing: border-box;
 }
 .pan {
-    width: 100%;
-    font-size: 45px;
-    width: 100%;
     height: 100%;
+    font-size: 45px;
     position: absolute;
     white-space: pre;
 }
@@ -132,14 +131,9 @@ a { text-decoration: none; color: inherit;}
 }
 
 /* 어바웃 */
-#about {
-    padding: 110px 60px;
-    box-sizing: border-box;
-}
 .contentBox {
     margin-bottom: 30px;
 }
-
 .content_title {
     font-weight: 700;
     font-size: 20px;
@@ -169,10 +163,6 @@ a { text-decoration: none; color: inherit;}
 }
 
 /* 스킬 */
-#skills {
-    padding: 110px 60px;
-    box-sizing: border-box;
-}
 #skillsTable {
     border-top: 1px solid gainsboro;
     box-sizing: border-box;
@@ -231,18 +221,20 @@ a { text-decoration: none; color: inherit;}
 }
 
 /* 포트폴리오1,2 */
-#portfolio1,
+/* #portfolio1,
 #portfolio2 {
     padding: 60px 25px;
     box-sizing: border-box;
-}
+} */
 .portfolio_box {
-    height: 100%;
+    height: 770px;
     border-radius: 10px;
     border: 1px solid #ddd;
     box-shadow: 8px 8px gainsboro;
-    margin-bottom: 30px;
     box-sizing: border-box;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .portfolio_top {
     height: 45%;
@@ -319,12 +311,9 @@ a { text-decoration: none; color: inherit;}
 }
 
 /* 콘택트 */
-#contact {
-    position: relative;
-}
 .contact_wrap {
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
