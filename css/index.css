@@ -220,6 +220,16 @@ a { text-decoration: none; color: inherit;}
     left: -30%;
 }
 
+/* 스킬2 */
+#skillsTable tr :first-child {
+    font-size: 17px;
+    font-weight: bold;
+}
+.skills_second_td {
+    font-size: 15px;
+    text-align: left;
+}
+
 /* 포트폴리오1,2 */
 /* #portfolio1,
 #portfolio2 {
